@@ -14,6 +14,12 @@ a:link, a:visited{
     color: blue;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card{
     border-radius: 50px 50px 7px 7px;
 }
@@ -69,7 +75,7 @@ a:link, a:visited{
 @media screen and (min-width: 950px){
     .nav_links{
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row;
     }
 
     .card{
@@ -77,6 +83,8 @@ a:link, a:visited{
     }
 
     header {
+        flex-direction: row;
+        justify-content: space-between;
         position: sticky;
         top: 0;
     }
